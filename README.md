@@ -1,16 +1,55 @@
-# React + Vite
+# React Tasks
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A set of three React mini-projects demonstrating core React concepts: reusable components with props, state management with hooks, and list/conditional rendering.
 
-Currently, two official plugins are available:
+## Tasks Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Task 1: Reusable Component with Props
+`ProductCard` component accepts `title`, `price`, and `category` as props and displays them in a styled box layout. Reused twice in `App.jsx` with different product data.
 
-## React Compiler
+### Task 2: State & Event Handling (useState)
+`LikeButton` component uses React's `useState` Hook with click event handling to dynamically increment and display a like count.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Task 3: List Rendering & Conditional Rendering
+`StudentList` component renders an array of student objects using `.map()` with unique `key` props, and conditionally displays a green "Pass" or red "Fail" status based on each student's score.
 
-## Expanding the Oxlint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- React (Vite)
+- Modern JavaScript (ES6): Destructuring, Arrow Functions, Hooks, Ternary/Conditional Rendering
+- CSS (responsive design with media queries)
+
+## Project Structure
+
+React-Tasks/
+├── src/
+│ ├── components/
+│ │ ├── ProductCard.jsx
+│ │ ├── LikeButton.jsx
+│ │ └── StudentList.jsx
+│ ├── App.jsx
+│ └── App.css
+
+
+## How to Run
+
+1. Clone this repository:
+
+git clone https://github.com/khadija6415/-React-Tasks.git
+
+2. Navigate into the project folder:
+
+cd -React-Tasks
+
+3. Install dependencies:
+
+npm install
+
+4. Start the dev server:
+
+npm run dev
+
+
+## Author
+
+Khadija
